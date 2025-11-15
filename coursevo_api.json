@@ -197,6 +197,130 @@
 			"response": []
 		},
 		{
+			"name": "[POST] Create Course - FAIL - Title is NULL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"// Kiểm tra lỗi validation trả về từ GlobalExceptionHandler",
+							"pm.test(\"Error code is VAL.CR0101 (Title must not be blank)\", function () {",
+							"    pm.expect(jsonData).to.have.property('error');",
+							"    pm.expect(jsonData.error.code).to.eql(\"VAL.CR0101\");",
+							"    pm.expect(jsonData.error.message).to.include(\"Title must not be blank\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": null,\n    \"category\": \"AI_AND_MACHINE_LEARNING\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/courses",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courses"
+					]
+				},
+				"description": "Test kịch bản thất bại: Tạo khóa học với 'title' là null. Mong đợi lỗi @NotBlank."
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Create Course - FAIL - Category is NULL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"// Kiểm tra lỗi validation trả về từ GlobalExceptionHandler",
+							"pm.test(\"Error code is VAL.CR0102 (Category must not be null)\", function () {",
+							"    pm.expect(jsonData).to.have.property('error');",
+							"    pm.expect(jsonData.error.code).to.eql(\"VAL.CR0102\");",
+							"    pm.expect(jsonData.error.message).to.include(\"Category must not be null\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Khóa học test Category Null\",\n    \"category\": null\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/courses",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courses"
+					]
+				},
+				"description": "Test kịch bản thất bại: Tạo khóa học với 'category' là null. Mong đợi lỗi @NotNull."
+			},
+			"response": []
+		},
+		{
 			"name": "[GET] Get Course By ID (Public)",
 			"event": [
 				{
@@ -330,6 +454,130 @@
 					]
 				},
 				"description": "Cập nhật khóa học. Yêu cầu quyền INSTRUCTOR."
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] Update Course - FAIL - Title is NULL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Error code is VAL.CR0101 (Title must not be blank)\", function () {",
+							"    pm.expect(jsonData).to.have.property('error');",
+							"    pm.expect(jsonData.error.code).to.eql(\"VAL.CR0101\");",
+							"    pm.expect(jsonData.error.message).to.include(\"Title must not be blank\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": null,\n    \"category\": \"AI_AND_MACHINE_LEARNING\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/courses/{{courseId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courses",
+						"{{courseId}}"
+					]
+				},
+				"description": "Test kịch bản thất bại: Cập nhật khóa học với 'title' là null. Mong đợi lỗi @NotBlank."
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] Update Course - FAIL - Category is NULL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400 Bad Request\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Error code is VAL.CR0102 (Category must not be null)\", function () {",
+							"    pm.expect(jsonData).to.have.property('error');",
+							"    pm.expect(jsonData.error.code).to.eql(\"VAL.CR0102\");",
+							"    pm.expect(jsonData.error.message).to.include(\"Category must not be null\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Khóa học test Category Null khi Update\",\n    \"category\": null\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/courses/{{courseId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"courses",
+						"{{courseId}}"
+					]
+				},
+				"description": "Test kịch bản thất bại: Cập nhật khóa học với 'category' là null. Mong đợi lỗi @NotNull."
 			},
 			"response": []
 		},
@@ -507,7 +755,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "http://localhost:8105"
+			"value": "https://api-coursevo-dev.id.vn"
 		},
 		{
 			"key": "authToken",
