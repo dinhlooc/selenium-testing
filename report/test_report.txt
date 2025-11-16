@@ -1,63 +1,66 @@
-[2025-11-11 23:29:49] - Review Submission and Interaction - THÀNH CÔNG
+[2025-11-13 23:39:37] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:03:14] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:39:37] - Gửi review rỗng - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:03:25] - Gửi review rỗng - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:39:39] - Gửi review 1 sao - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:03:35] - Gửi review 1 sao - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:39:48] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:03:46] - Phản hồi review - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:42:33] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:06:12] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:42:33] - Gửi review rỗng - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:07:28] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:42:36] - Gửi review 1 sao - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:07:39] - Gửi review rỗng - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:42:43] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:07:42] - Gửi review 1 sao - THÀNH CÔNG
+[2025-11-13 23:46:23] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:07:49] - Phản hồi review - THÀNH CÔNG
+[2025-11-13 23:46:23] - Gửi review rỗng - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:35:54] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:46:25] - Gửi review 1 sao - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:35:55] - Gửi review rỗng - THÀNH CÔNG
+[2025-11-13 23:46:51] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:35:57] - Gửi review 1 sao - THÀNH CÔNG
+[2025-11-13 23:53:49] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:36:04] - Phản hồi review - THÀNH CÔNG
+[2025-11-13 23:53:50] - Gửi review rỗng - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:37:41] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: stale element reference: stale element not found in the current frame
+[2025-11-13 23:53:52] - Gửi review 1 sao - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:37:41] - Gửi review rỗng - THÀNH CÔNG
+[2025-11-13 23:54:18] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:37:44] - Gửi review 1 sao - THÀNH CÔNG
+[2025-11-13 23:57:13] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:37:51] - Phản hồi review - THÀNH CÔNG
+[2025-11-13 23:57:13] - Gửi review rỗng - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:45:11] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: 
+[2025-11-13 23:57:16] - Gửi review 1 sao - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:45:11] - Gửi review rỗng - THÀNH CÔNG
+[2025-11-13 23:57:34] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:45:14] - Gửi review 1 sao - THÀNH CÔNG
+[2025-11-14 22:03:12] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 10:45:20] - Phản hồi review - THÀNH CÔNG
+[2025-11-14 22:03:12] - Gửi review rỗng - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 20:18:10] - Gửi review hợp lệ và Like/Dislike - THẤT BẠI
-  Message: Message: stale element reference: stale element not found in the current frame
+[2025-11-14 22:03:14] - Gửi review 1 sao - THẤT BẠI
+  Message: Review không xuất hiện!
 --------------------------------------------------
-[2025-11-13 20:18:11] - Gửi review rỗng - THÀNH CÔNG
+[2025-11-14 22:03:30] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 20:18:13] - Gửi review 1 sao - THÀNH CÔNG
+[2025-11-15 07:33:06] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
 --------------------------------------------------
-[2025-11-13 20:18:22] - Phản hồi review - THÀNH CÔNG
+[2025-11-15 07:33:06] - Gửi review rỗng - THÀNH CÔNG
+--------------------------------------------------
+[2025-11-15 07:33:10] - Gửi review 1 sao - THẤT BẠI
+  Message: Review không xuất hiện!
+--------------------------------------------------
+[2025-11-15 07:33:25] - Phản hồi review - THÀNH CÔNG
+--------------------------------------------------
+[2025-11-15 07:35:48] - Gửi review hợp lệ và Like/Dislike - THÀNH CÔNG
+--------------------------------------------------
+[2025-11-15 07:35:48] - Gửi review rỗng - THÀNH CÔNG
+--------------------------------------------------
+[2025-11-15 07:35:51] - Gửi review 1 sao - THÀNH CÔNG
+--------------------------------------------------
+[2025-11-15 07:36:07] - Phản hồi review - THÀNH CÔNG
 --------------------------------------------------

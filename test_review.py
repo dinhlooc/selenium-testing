@@ -341,9 +341,13 @@ if __name__ == "__main__":
         login(driver, wait)
         # Các test case chỉ thực hiện thao tác review, KHÔNG gọi lại login
         goto_review_tab(driver, wait)
+        time.sleep(3)  # Đợi trang review tải xong
         test_review_valid(driver, wait)
+        time.sleep(3)
         test_review_empty(driver, wait)
+        time.sleep(3)
         test_review_min_star(driver, wait)
+        time.sleep(3)
         test_review_reply(driver, wait)
     finally:
         end_time = datetime.now()  # THÊM: Ghi lại thời điểm kết thúc
